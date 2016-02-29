@@ -24,6 +24,13 @@ class ViewController: UIViewController, JukeboxDelegate {
         jukebox.stop()
     }
     
+    @IBAction func goBack30ButtonPressed() {
+        
+    }
+    
+    @IBAction func goForward30ButtonPressed() {
+        
+    }
     
     func jukeboxStateDidChange(jukebox: Jukebox) {
         
