@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B566235682832C85C9C8FC6 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B16A836B354F2CC74658AE5 /* Pods.framework */; };
 		65CB37011C850402009DC6EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB37001C850402009DC6EF /* AppDelegate.swift */; };
 		65CB37031C850402009DC6EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB37021C850402009DC6EF /* ViewController.swift */; };
 		65CB37061C850402009DC6EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CB37041C850402009DC6EF /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1130E1BA286494E629FDE980 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		37B83961800C5C01AC630AF9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		65CB36FD1C850402009DC6EF /* SimpleAudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CB37001C850402009DC6EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CB37021C850402009DC6EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		65CB371C1C850402009DC6EF /* SimpleAudioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAudioPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CB37201C850402009DC6EF /* SimpleAudioPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAudioPlayerUITests.swift; sourceTree = "<group>"; };
 		65CB37221C850402009DC6EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B16A836B354F2CC74658AE5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B566235682832C85C9C8FC6 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				65CB37141C850402009DC6EF /* SimpleAudioPlayerTests */,
 				65CB371F1C850402009DC6EF /* SimpleAudioPlayerUITests */,
 				65CB36FE1C850402009DC6EF /* Products */,
+				9FA82BFCBE4023EEB9C85378 /* Pods */,
+				E19CD37158877475D8187328 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = SimpleAudioPlayerUITests;
 			sourceTree = "<group>";
 		};
+		9FA82BFCBE4023EEB9C85378 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37B83961800C5C01AC630AF9 /* Pods.debug.xcconfig */,
+				1130E1BA286494E629FDE980 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E19CD37158877475D8187328 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B16A836B354F2CC74658AE5 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65CB37251C850402009DC6EF /* Build configuration list for PBXNativeTarget "SimpleAudioPlayer" */;
 			buildPhases = (
+				424A076C1B6D4B8D553F2ED7 /* Check Pods Manifest.lock */,
 				65CB36F91C850402009DC6EF /* Sources */,
 				65CB36FA1C850402009DC6EF /* Frameworks */,
 				65CB36FB1C850402009DC6EF /* Resources */,
+				2B91B7B3C091C3BF9676716C /* Embed Pods Frameworks */,
+				04969C57887205F93C16DB0D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04969C57887205F93C16DB0D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B91B7B3C091C3BF9676716C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		424A076C1B6D4B8D553F2ED7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65CB36F91C850402009DC6EF /* Sources */ = {
@@ -397,6 +472,7 @@
 		};
 		65CB37261C850402009DC6EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B83961800C5C01AC630AF9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleAudioPlayer/Info.plist;
@@ -408,6 +484,7 @@
 		};
 		65CB37271C850402009DC6EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1130E1BA286494E629FDE980 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleAudioPlayer/Info.plist;
@@ -484,6 +561,7 @@
 				65CB37271C850402009DC6EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65CB37281C850402009DC6EF /* Build configuration list for PBXNativeTarget "SimpleAudioPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +570,7 @@
 				65CB372A1C850402009DC6EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65CB372B1C850402009DC6EF /* Build configuration list for PBXNativeTarget "SimpleAudioPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +579,7 @@
 				65CB372D1C850402009DC6EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

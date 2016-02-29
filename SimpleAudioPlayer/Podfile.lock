@@ -1,0 +1,10 @@
+PODS:
+  - Jukebox (0.1.1)
+
+DEPENDENCIES:
+  - Jukebox (~> 0.1.0)
+
+SPEC CHECKSUMS:
+  Jukebox: 8d26135016a69ca3f0581a6b42755f0fcb9202b0
+
+COCOAPODS: 0.39.0

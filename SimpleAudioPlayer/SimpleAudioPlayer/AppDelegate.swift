@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SimpleAudioPlayer
-//
-//  Created by Daniel Amarante on 2/29/16.
-//  Copyright © 2016 Daniel Amarante. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

@@ -1,18 +1,11 @@
-//
-//  ViewController.swift
-//  SimpleAudioPlayer
-//
-//  Created by Daniel Amarante on 2/29/16.
-//  Copyright © 2016 Daniel Amarante. All rights reserved.
-//
-
 import UIKit
+import Jukebox
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
     override func didReceiveMemoryWarning() {
