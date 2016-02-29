@@ -13,11 +13,6 @@ class ViewController: UIViewController, JukeboxDelegate {
         jukebox.play()
 
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func jukeboxStateDidChange(jukebox: Jukebox) {
         
