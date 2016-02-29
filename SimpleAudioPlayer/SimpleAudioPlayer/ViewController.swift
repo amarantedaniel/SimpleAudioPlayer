@@ -10,9 +10,20 @@ class ViewController: UIViewController, JukeboxDelegate {
         let path = NSBundle.mainBundle().pathForResource("Test", ofType: "mp3")
         let url = NSURL(fileURLWithPath: path!)
         jukebox = Jukebox(delegate: self, items: [JukeboxItem(URL: url)])
-        jukebox.play()
-
     }
+    
+    @IBAction func playButtonPressed() {
+        jukebox.play()
+    }
+    
+    @IBAction func pauseButtonPressed() {
+        jukebox.pause()
+    }
+    
+    @IBAction func stopButtonPressed() {
+        jukebox.stop()
+    }
+    
     
     func jukeboxStateDidChange(jukebox: Jukebox) {
         
