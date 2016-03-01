@@ -3,3 +3,4 @@ platform :ios, '8.0'
 use_frameworks!
 
 pod 'Jukebox', '~> 0.1.0'
+pod 'Bond', '~> 4.0'
