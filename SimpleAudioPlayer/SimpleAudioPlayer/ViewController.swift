@@ -1,13 +1,13 @@
 import UIKit
 
-class ViewController: UIViewController, AudioPlayerDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet weak var timestampLabel: UILabel!
     var audioPlayer = AudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        audioPlayer.delegate = self
+        audioPlayer.timestamp.bindTo(timestampLabel.bnd_text)
     }
     
     @IBAction func playButtonPressed() {
@@ -28,10 +28,6 @@ class ViewController: UIViewController, AudioPlayerDelegate {
     
     @IBAction func goForward30ButtonPressed() {
         audioPlayer.jumpForward30Seconds()
-    }
-    
-    func updateTimeStamp(timestamp: String) {
-        timestampLabel.text = timestamp
     }
 }
 

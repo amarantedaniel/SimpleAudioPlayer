@@ -1,10 +1,11 @@
 import UIKit
 import Jukebox
+import Bond
 
 class AudioPlayer: NSObject {
     
     var jukebox: Jukebox!
-    weak var delegate: AudioPlayerDelegate?
+    var timestamp = Observable("00:00")
     
     override init() {
         super.init()
@@ -55,12 +56,7 @@ extension AudioPlayer: JukeboxDelegate {
         
     }
     func jukeboxPlaybackProgressDidChange(jukebox: Jukebox) {
-        delegate?.updateTimeStamp(getCurrentTime())
+        timestamp.value = getCurrentTime()
     }
     
-}
-
-
-protocol AudioPlayerDelegate: class {
-    func updateTimeStamp(timestamp: String)
 }
