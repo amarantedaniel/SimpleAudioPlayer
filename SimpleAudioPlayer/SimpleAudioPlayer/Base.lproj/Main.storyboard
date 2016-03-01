@@ -53,21 +53,32 @@
                                     <action selector="goBack30ButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="xev-cD-bWa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbk-Be-HPc">
+                                <rect key="frame" x="279" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lbD-eB-Eyr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="4Cx-pk-CyU"/>
                             <constraint firstItem="0tN-4r-nWf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8tL-zM-f7h"/>
                             <constraint firstItem="262-Oo-SaB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="Am5-TJ-6F4"/>
+                            <constraint firstItem="lbk-Be-HPc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RyR-2s-JWy"/>
                             <constraint firstItem="wfn-19-Ss7" firstAttribute="top" secondItem="262-Oo-SaB" secondAttribute="bottom" constant="8" id="XqZ-1p-tEd"/>
                             <constraint firstItem="lbD-eB-Eyr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YTs-EB-Y02"/>
                             <constraint firstItem="wfn-19-Ss7" firstAttribute="centerX" secondItem="262-Oo-SaB" secondAttribute="centerX" id="dWG-QP-ADG"/>
                             <constraint firstItem="0tN-4r-nWf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eoG-GP-LR8"/>
                             <constraint firstItem="262-Oo-SaB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hfo-lE-5P6"/>
                             <constraint firstItem="s75-Rp-3lM" firstAttribute="top" secondItem="lbD-eB-Eyr" secondAttribute="bottom" constant="8" id="i0l-5N-5tq"/>
+                            <constraint firstItem="lbk-Be-HPc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mcH-ks-vat"/>
                             <constraint firstItem="s75-Rp-3lM" firstAttribute="centerX" secondItem="lbD-eB-Eyr" secondAttribute="centerX" id="y9S-jh-evV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timestampLabel" destination="lbk-Be-HPc" id="bsZ-JF-8bm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

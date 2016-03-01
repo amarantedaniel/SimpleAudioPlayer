@@ -4,6 +4,7 @@ import Jukebox
 class ViewController: UIViewController, JukeboxDelegate {
     
     var jukebox: Jukebox!
+    @IBOutlet weak var timestampLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
