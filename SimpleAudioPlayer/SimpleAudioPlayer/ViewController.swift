@@ -44,6 +44,12 @@ class ViewController: UIViewController, JukeboxDelegate {
         
     }
     func jukeboxPlaybackProgressDidChange(jukebox: Jukebox) {
+        updateTime()
+    }
+    
+    func updateTime() {
+        let currentTime = Int(jukebox.currentItem!.currentTime!)
+        timestampLabel.text = currentTime.description
         
     }
 
