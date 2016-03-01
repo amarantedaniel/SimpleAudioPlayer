@@ -49,7 +49,10 @@ class ViewController: UIViewController, JukeboxDelegate {
     
     func updateTime() {
         let currentTime = Int(jukebox.currentItem!.currentTime!)
-        timestampLabel.text = currentTime.description
+        let minutes = currentTime/60
+        let seconds = currentTime - minutes * 60
+        
+        timestampLabel.text = NSString(format: "%02d:%02d", minutes,seconds) as String
         
     }
 
