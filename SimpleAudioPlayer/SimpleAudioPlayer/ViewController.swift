@@ -4,6 +4,7 @@ import Jukebox
 class ViewController: UIViewController, JukeboxDelegate {
     
     var jukebox: Jukebox!
+    @IBOutlet weak var timestampLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,15 @@ class ViewController: UIViewController, JukeboxDelegate {
         
     }
     func jukeboxPlaybackProgressDidChange(jukebox: Jukebox) {
+        updateTime()
+    }
+    
+    func updateTime() {
+        let currentTime = Int(jukebox.currentItem!.currentTime!)
+        let minutes = currentTime/60
+        let seconds = currentTime - minutes * 60
+        
+        timestampLabel.text = NSString(format: "%02d:%02d", minutes,seconds) as String
         
     }
 
