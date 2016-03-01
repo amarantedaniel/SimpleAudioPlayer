@@ -4,6 +4,7 @@ import Jukebox
 class AudioPlayer: NSObject {
     
     var jukebox: Jukebox!
+    weak var delegate: AudioPlayerDelegate?
     
     override init() {
         super.init()
@@ -54,7 +55,12 @@ extension AudioPlayer: JukeboxDelegate {
         
     }
     func jukeboxPlaybackProgressDidChange(jukebox: Jukebox) {
-        
+        delegate?.updateTimeStamp(getCurrentTime())
     }
     
+}
+
+
+protocol AudioPlayerDelegate: class {
+    func updateTimeStamp(timestamp: String)
 }

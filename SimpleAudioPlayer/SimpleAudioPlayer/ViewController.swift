@@ -1,13 +1,14 @@
 import UIKit
 import Jukebox
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AudioPlayerDelegate {
     
     @IBOutlet weak var timestampLabel: UILabel!
     var audioPlayer = AudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        audioPlayer.delegate = self
     }
     
     @IBAction func playButtonPressed() {
@@ -28,6 +29,10 @@ class ViewController: UIViewController {
     
     @IBAction func goForward30ButtonPressed() {
         audioPlayer.jumpForward30Seconds()
+    }
+    
+    func updateTimeStamp(timestamp: String) {
+        timestampLabel.text = timestamp
     }
 }
 
