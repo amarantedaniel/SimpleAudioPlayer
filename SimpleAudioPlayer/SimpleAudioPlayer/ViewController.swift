@@ -24,6 +24,17 @@ class ViewController: UIViewController, JukeboxDelegate {
         jukebox.stop()
     }
     
+    @IBAction func goBack30ButtonPressed() {
+        let currentTime = jukebox.currentItem?.currentTime
+        let currentTimeInt = Int(currentTime!)
+        jukebox.seekToSecond(currentTimeInt - 30)
+    }
+    
+    @IBAction func goForward30ButtonPressed() {
+        let currentTime = jukebox.currentItem?.currentTime
+        let currentTimeInt = Int(currentTime!)
+        jukebox.seekToSecond(currentTimeInt + 30)
+    }
     
     func jukeboxStateDidChange(jukebox: Jukebox) {
         

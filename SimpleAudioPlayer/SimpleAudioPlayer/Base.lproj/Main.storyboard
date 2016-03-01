@@ -39,20 +39,39 @@
                                     <action selector="stopButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="wKR-RG-ZH9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfn-19-Ss7">
+                                <rect key="frame" x="435" y="323" width="30" height="30"/>
+                                <state key="normal" title="+30"/>
+                                <connections>
+                                    <action selector="goForward30ButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5x-ug-dej"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s75-Rp-3lM">
+                                <rect key="frame" x="135" y="323" width="30" height="30"/>
+                                <state key="normal" title="-30"/>
+                                <connections>
+                                    <action selector="goBack30ButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="xev-cD-bWa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lbD-eB-Eyr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="4Cx-pk-CyU"/>
                             <constraint firstItem="0tN-4r-nWf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8tL-zM-f7h"/>
                             <constraint firstItem="262-Oo-SaB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="Am5-TJ-6F4"/>
+                            <constraint firstItem="wfn-19-Ss7" firstAttribute="top" secondItem="262-Oo-SaB" secondAttribute="bottom" constant="8" id="XqZ-1p-tEd"/>
                             <constraint firstItem="lbD-eB-Eyr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YTs-EB-Y02"/>
+                            <constraint firstItem="wfn-19-Ss7" firstAttribute="centerX" secondItem="262-Oo-SaB" secondAttribute="centerX" id="dWG-QP-ADG"/>
                             <constraint firstItem="0tN-4r-nWf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eoG-GP-LR8"/>
                             <constraint firstItem="262-Oo-SaB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hfo-lE-5P6"/>
+                            <constraint firstItem="s75-Rp-3lM" firstAttribute="top" secondItem="lbD-eB-Eyr" secondAttribute="bottom" constant="8" id="i0l-5N-5tq"/>
+                            <constraint firstItem="s75-Rp-3lM" firstAttribute="centerX" secondItem="lbD-eB-Eyr" secondAttribute="centerX" id="y9S-jh-evV"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="510" y="265"/>
         </scene>
     </scenes>
 </document>
