@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B566235682832C85C9C8FC6 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B16A836B354F2CC74658AE5 /* Pods.framework */; };
 		659242FD1C8509AB000A4983 /* Test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 659242FC1C8509AB000A4983 /* Test.mp3 */; };
+		65B1692A1C851DE100A8EAA0 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B169291C851DE100A8EAA0 /* AudioPlayer.swift */; };
 		65CB37011C850402009DC6EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB37001C850402009DC6EF /* AppDelegate.swift */; };
 		65CB37031C850402009DC6EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB37021C850402009DC6EF /* ViewController.swift */; };
 		65CB37061C850402009DC6EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CB37041C850402009DC6EF /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		1130E1BA286494E629FDE980 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		37B83961800C5C01AC630AF9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		659242FC1C8509AB000A4983 /* Test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Test.mp3; sourceTree = "<group>"; };
+		65B169291C851DE100A8EAA0 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		65CB36FD1C850402009DC6EF /* SimpleAudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CB37001C850402009DC6EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65CB37021C850402009DC6EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				65CB37071C850402009DC6EF /* Assets.xcassets */,
 				65CB37091C850402009DC6EF /* LaunchScreen.storyboard */,
 				65CB370C1C850402009DC6EF /* Info.plist */,
+				65B169291C851DE100A8EAA0 /* AudioPlayer.swift */,
 			);
 			path = SimpleAudioPlayer;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			files = (
 				65CB37031C850402009DC6EF /* ViewController.swift in Sources */,
 				65CB37011C850402009DC6EF /* AppDelegate.swift in Sources */,
+				65B1692A1C851DE100A8EAA0 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
